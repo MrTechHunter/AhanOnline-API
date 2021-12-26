@@ -10,7 +10,7 @@ class Team(models.Model):
     Description = models.TextField(null=True, blank=True)
     CreatedOn = models.DateTimeField(null=True, blank=True)
     ModifiedOn = models.DateTimeField(null=True, blank=True)
-    createdBy = models.CharField(max_length=255, null=True, blank=True)
+    CreatedBy = models.CharField(max_length=255, null=True, blank=True)
     ModifiedBy = models.CharField(max_length=255, null=True, blank=True)
     IsDefault = models.BooleanField(max_length=255, blank=True)
     AdministratorId = models.CharField(max_length=255, blank=True)
