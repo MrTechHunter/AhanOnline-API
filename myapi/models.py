@@ -5,7 +5,7 @@ from django.db import models
 class Team(models.Model):
     TeamId = models.CharField(primary_key=True, max_length=255, blank=True)
     OrganizationId = models.CharField(max_length=255, blank=True)
-    BusinessunitId = models.CharField(max_length=255, blank=True)
+    BusinessUnitId = models.CharField(max_length=255, blank=True)
     Name = models.CharField(max_length=255, blank=True)
     Description = models.TextField(null=True, blank=True)
     CreatedOn = models.DateTimeField(null=True, blank=True)
