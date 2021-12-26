@@ -78,29 +78,29 @@ WSGI_APPLICATION = 'ao_backend_api.wsgi.application'
 
 ### Sqlite3 ###
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 ### MSSQL ###
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'sql_server.pyodbc',
-#         'NAME': 'AhanOnline_API',
-#         'USER': 'sa',
-#         'PASSWORD': '12345',
-#         'HOST': 'AOD-MHAMLDAR\MSSQL2019',
-#         'OPTIONS': {
-#             'driver':'ODBC Driver 17 for SQL Server',
-#             'isolation_level':'READ UNCOMMITTED' # To prevent deadlocks
-#         }
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'ahanonline_backend',
+        'USER': 'sa',
+        'PASSWORD': '12345',
+        'HOST': 'AOD-MHAMLDAR\MSSQL2019',
+        'OPTIONS': {
+            'driver':'ODBC Driver 17 for SQL Server',
+            'isolation_level':'READ UNCOMMITTED' # To prevent deadlocks
+        }
+    }
+}
 
 
 # Password validation
