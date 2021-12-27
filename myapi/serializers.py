@@ -5,7 +5,12 @@ from .models import Systemusersview
 class TeamSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Team
-        fields = ('teamid', 'name')
+        fields = ('teamid', 'organizationid', 'businessunitid', 'name', 'description',
+        'createdon', 'modifiedon', 'createdby', 'modifiedby', 'isdefault', 'administratorid',
+        'queueid', 'teamtype', 'teamtemplateid', 'regardingobjecttypecode', 'manager',
+        'salespurchasemanager', 'id', 'wegedetailaccount', 'poursantdetailaccount',
+        'subsidiary', 'wegefactorsdetailaccount', 'poursantfactorsdetailaccount',
+        'unitmanager', 'teampercentage', 'goal', 'usercount', 'newteamtype')
 
 class SystemUsersSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
