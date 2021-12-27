@@ -15,4 +15,5 @@ class TeamSerializer(serializers.HyperlinkedModelSerializer):
 class SystemUsersSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Systemusersview
-        fields = ('firstname', 'gender')
+        fields = ('mainteamname', 'systemuserid', 'organizationid', 'businessunitid'
+        'parentsystemuserid', 'firstname', 'lastname', 'fullname', 'internalemailaddress')
