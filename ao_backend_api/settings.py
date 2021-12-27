@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'ao_backend_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'ahanonline_backend',
+        'NAME': 'main_ahan_online',
         'USER': 'sa',
         'PASSWORD': '12345',
         'HOST': 'AOD-MHAMLDAR\MSSQL2019',
