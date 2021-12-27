@@ -6,6 +6,8 @@ from .models import Systemusersview
 
 ### Team Model ###
 class TeamAdmin(admin.ModelAdmin):
+    list_display = ('name', 'description', 'createdon', 'modifiedon', 'createdby', 'modifiedby', 'teamtype', 'manager', 'poursantdetailaccount'
+    ,'unitmanager')
     list_filter = ("teamid", "createdby")
     search_fields = ['Name', 'TeamId']
 
@@ -14,6 +16,7 @@ admin.site.register(Team, TeamAdmin)
 
 ### Systemusersview Model ###
 class SystemusersviewAdmin(admin.ModelAdmin):
+    list_display = ('fullname', 'mobilephone', 'createdon', 'modifiedon', 'createdby', 'modifiedby')
     list_filter = ("mainteam", "createdby")
     search_fields = ['fullname', 'mobilephone']
 
