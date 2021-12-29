@@ -39,11 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapi.apps.MyapiConfig',
     'rest_framework',
-    "corsheaders", # Just for CORS problem
 ]
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware", # Just for CORS problem
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -98,8 +96,8 @@ DATABASES = {
         'PASSWORD': '12345',
         'HOST': 'AOD-MHAMLDAR\MSSQL2019',
         'OPTIONS': {
-            'driver':'ODBC Driver 17 for SQL Server',
-            'isolation_level':'READ UNCOMMITTED' # To prevent deadlocks
+            'driver': 'ODBC Driver 17 for SQL Server',
+            'isolation_level': 'READ UNCOMMITTED'  # To prevent deadlocks
         }
     }
 }
